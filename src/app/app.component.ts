@@ -1,23 +1,25 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
+  title = "app";
+
   single: any[] = [
     {
-      "name": "Germany",
-      "value": 8940000
+      name: "Germany",
+      value: 8940000
     },
     {
-      "name": "USA",
-      "value": 5000000
+      name: "USA",
+      value: 5000000
     },
     {
-      "name": "France",
-      "value": 7200000
+      name: "France",
+      value: 7200000
     }
   ];
 
@@ -29,12 +31,12 @@ export class AppComponent {
   gradient = false;
   showLegend = true;
   showXAxisLabel = true;
-  xAxisLabel = 'Country';
+  xAxisLabel = "Country";
   showYAxisLabel = true;
-  yAxisLabel = 'Population';
+  yAxisLabel = "Population";
 
   colorScheme = {
-    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+    domain: ["#5AA454", "#A10A28", "#C7B42C", "#AAAAAA"]
   };
 
   onSelect(event) {
